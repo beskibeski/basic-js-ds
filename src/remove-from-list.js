@@ -31,10 +31,9 @@ function removeKFromList(l, k) {
         beforeHead.next = l.next;
         l = l.next;
         continue;
-      } else {
-        l = l.next;
-        head = l;
-      }      
+      } 
+      l = l.next;
+      head = l;
     }
     beforeHead = l;
     l = l.next;
